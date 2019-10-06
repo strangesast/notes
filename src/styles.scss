@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$notes-primary: mat-palette($mat-grey, 50);
+$notes-accent: mat-palette($mat-blue-grey, 700, 500, 900);
+$notes-warn: mat-palette($mat-red);
+$notes-theme: mat-light-theme($notes-primary, $notes-accent, $notes-warn);
+@include angular-material-theme($notes-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
